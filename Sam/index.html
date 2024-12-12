@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+    <title>SAM - The Governor of Base</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-wrapper relative flex justify-center items-center">
+                <div
+                    class="glow-effect absolute bottom-5 left-3/4 transform -translate-y-1/2 w-10 h-4 bg-gray-300 shadow-lg filter blur-md z-10 animate-glow">
+                </div>
+                <div class="logo-header-container">
+                    <img src="image/SAM_Logo.png" alt="Sam Logo"
+                        class="logo-image relative flex items-center justify-center w-20 h-20">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#story">STORY</a></li>
+                    <li><a href="#roadmap">ROADMAP</a></li>
+                    <li><a href="#how-to-buy">HOW TO BUY</a></li>
+                </ul>
+            </nav>
+            <div class="social-container">
+                <a href="https://x.com/home" class="social-icon-header x">
+                    <img src="image/x.jpg" alt="X (Twitter)">
+                </a>
+                <a href="#" class="social-icon-header telegram">
+                    <img src="image/telegram.jpg" alt="Telegram">
+                </a>
+                <a href="#" class="social-icon-header discord">
+                    <img src="image/discord.jpg" alt="Discord">
+                </a>
+                <a href="#" class="social-icon-header tiktok">
+                    <img src="image/tiktok.jpg" alt="TikTok">
+                </a>
+            </div>
+        </div>
+        <div class="back-to-buy">
+            <div class="rectangle" id="backToBuyButton" onclick="scrollToTop()">
+                <img src="image/SAM_Hero.png" alt="Mascot Logo" class="logo">
+                <span class="text">BACK TO BUY</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero relative bg-[#0052FF] w-full h-fit mt-[126px] pt-[10px] overflow-hidden">
+            <!-- Content -->
+            <div class="relative z-20 flex flex-col items-center ">
+                <div class="relative text-center">
+                    <div class="relative" style="left: 107px;">
+                        <Image src="image/sparkles.png" alt="sparkles" width={55} height={60}
+                            className="sparkle mt-2" />
+                    </div>
+                    <div class="title-container pb-10">
+                        <div class="line left-line mr-10"></div>
+                        <h1 class="title m-0 p-0 relative z-[3] -mt-10">SAM</h1>
+                        <div class="line right-line ml-10"></div>
+                    </div>
+                    <div
+                        className="flex items-center justify-center gap-[10px] absolute -bottom-[60px] left-1/2 -translate-x-1/2 z-[4]">
+                        <h2 class="subtitle text-[32px] font-normal leading-4 text-center text-white relative">The
+                            Governor of Base</h2>
+                    </div>
+                    <div class="contact-address">
+                        <h2 class="contact-title">CONTACT ADDRESS</h2>
+                        <div class="address-container">
+                            <span class="address-text">0x64bAa63F3eeDf9661f736d8E4D42c6f8aa0cdA71</span>
+                            <button class="copy-button" onclick="copyAddress()">
+                                COPY
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="relative flex justify-center items-center -mt-10" style="margin-top: -142px;">
+                    <Image src="image/Building.png" alt="Building" width={800} height={400}
+                        className="w-1/2 h-auto z-10" />
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+                        <Image src="image/SAMHERO.png" alt="SAM Character" width={1000} height={1000}
+                            className=" w-full h-auto filter drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] -mt-[200px] z-20" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+            </div>
+        </div>
+
+        <section id="story" class="story-section">
+            <div class="background-story-pattern"></div>
+            <div class="story-title fade-element" style="transition-delay: 0s;">
+                <div class="yellow-box fade-element" style="transition-delay: 0.2s;">
+                    <span class="sam-text">SAM</span>
+                </div>
+                <span class="story-text fade-element" style="transition-delay: 0.4s;">Story</span>
+            </div>
+            <div class="story-content fade-element" style="transition-delay: 0.6s;">
+                <img src="image/story.png" alt="Story">
+            </div>
+        </section>
+
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+            </div>
+        </div>
+
+        <section id="roadmap" class="sam-cycle-section">
+            <div class="background-cycle-pattern"></div>
+            <div class="title-container zoom-element" style="transition-delay: 0s;">
+                <div class="line left-line"></div>
+                <h2 class="cycle-title">SamCycle</h2>
+                <div class="line right-line"></div>
+            </div>
+
+            <div class="cycle-container">
+                <!-- Success Image -->
+                <div class="cycle-item success zoom-element" style="transition-delay: 0.2s;">
+                    <img src="image/success.png" alt="Success">
+                    <div class="arrow arrow-1"></div>
+                </div>
+
+                <!-- Sam Fly Image -->
+                <div class="cycle-item sam-fly zoom-element" style="transition-delay: 1s;">
+                    <img src="image/sam-fly.png" alt="Sam Flying">
+                    <div class="arrow arrow-2"></div>
+                </div>
+
+                <!-- Sam Watching Image -->
+                <div class="cycle-item sam-watching zoom-element" style="transition-delay: 0.8s;">
+                    <img src="image/sam-watching.png" alt="Sam Watching">
+                    <div class="arrow arrow-3"></div>
+                </div>
+
+                <!-- Sam Computer Image -->
+                <div class="cycle-item sam-computer zoom-element" style="transition-delay: 0.6s;">
+                    <img src="image/sam-computer.png" alt="Sam at Computer">
+                    <div class="arrow arrow-4"></div>
+                </div>
+
+                <!-- Sam Elevator Image -->
+                <div class="cycle-item sam-elevator zoom-element" style="transition-delay: 0.2s;">
+                    <img src="image/sam-elevator.png" alt="Sam at Elevator">
+                    <div class="arrow arrow-5"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+            </div>
+        </div>
+
+        <section id="how-to-buy" class="how-to-buy-section max-h-full relative">
+            <div class="background-htb-pattern absolute top-0 left-0 w-1/2 h-full z-10">
+                <img src="/image/linear.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="title-container z-20">
+                <div class="htb-title fade-element" style="transition-delay: 0s;">
+                    <span class="htb-text fade-element" style="transition-delay: 0.4s;">Buy</span>
+                    <div class="htb-yellow-box fade-element" style="transition-delay: 0.2s;">
+                        <span class="htb-sam-text">$SAM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lines-container gap-3">
+                <div class="line left-line transform -translate-x-20 w-64 g-10 z-20"></div>
+                <div class="line right-line transform translate-x-20 w-64 z-20"></div>
+            </div>
+            <div class="htb-content-container flex w-full h-full">
+                <div class="htb-left-container w-1/2 z-20">
+                    <img src="/image/SAM-Visa.png" alt="" class="relative mt-10 ml-20">
+                </div>
+                <div class="htb-right-container w-1/2">
+                    <div class="htb-title htb-right-title fade-element" style="transition-delay: 0s;">
+                        <!-- <span class="htb-right-text fade-element" style="transition-delay: 0.4s;">How to buy</span> -->
+                        <div class="htb-orange-box fade-element relative mt-10 -mr-20" style="transition-delay: 0.2s;">
+                            <span class="htb-right-sam-text">How to buy $SAM</span>
+                        </div>
+                    </div>
+                    <div class="line bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transform translate-y-5 translate-x-20 w-80 ml-20 relative"></div>
+                    <div class="steps-container">
+                        <!-- Step 1 -->
+                        <div class="step-item step-1">
+                            <div class="number-badge n1">1</div>
+                            <div class="thought-bubble">
+                                <img src="image/Func1.png" alt="Step 1" class="step-image">
+                            </div>
+                            <!-- Arrow 1 -->
+                            <div class="arrow-htb arrow-htb-1">
+                                <img src="image/Arrow-how-to-buy-1.png" alt="Arrow">
+                            </div>
+                        </div>
+
+
+                        <!-- Step 2 -->
+                        <div class="step-item step-2">
+                            <div class="number-badge n2">2</div>
+                            <div class="thought-bubble">
+                                <img src="image/Func2.png" alt="Step 2" class="step-image">
+                            </div>
+                            <!-- Arrow 2 -->
+                            <div class="arrow-htb arrow-htb-2">
+                                <img src="image/Arrow-how-to-buy-2.png" alt="Arrow">
+                            </div>
+                        </div>
+
+
+                        <!-- Step 3 -->
+                        <div class="step-item step-3">
+                            <div class="number-badge n3">3</div>
+                            <div class="thought-bubble">
+                                <img src="image/Func3.png" alt="Step 3" class="step-image">
+                            </div>
+                            <!-- Arrow 3 -->
+                            <div class="arrow-htb arrow-htb-3">
+                                <img src="image/Arrow-how-to-buy-2.png" alt="Arrow">
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-item step-4">
+                            <div class="thought-bubble">
+                                <img src="image/Func4.png" alt="Step 4" class="step-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+            </div>
+        </div>
+
+        <section class="thumpnail-section relative">
+            <div class="background-thumnail-pattern relative">
+                <img src="/image/SamFly.png" alt="" class="absolute w-1/2 h-auto right-0">
+            </div>
+            <div class="thumnail-container relative ">
+                <div class="quote-text absolute text-white">
+                    <span class="sam-quote-text-1 text-lg md:text-xl font-bold">What People Are Saying</span> 
+                    <span class="sam-quote-text-2 text-3xl md:text-4xl font-semibold italic my-4 block">"Just the beginning"</span>
+                    <span class="sam-quote-text-3 text-sm md:text-base font-light block">C2 - CEO of Binance</span>
+                </div>
+                <div class="quote-text-2 absolute text-white">
+                    <div class="flex items-center space-x-4">
+                        <div class="thumpnail-box fade-element" style="transition-delay: 0.2s;">
+                            <span class="thumpnail-sam-text">$SAM</span>
+                        </div>
+                        <span class="sam-quote-text-2 text-3xl md:text-4xl font-semibold italic">Is culture</span>
+                    </div>
+                    <!-- "<span class="sam-quote-text-2 text-3xl md:text-4xl font-semibold italic my-4 text-black">$SAM</span>  -->
+                    <span class="absolute text-3xl md:text-4xl font-semibold italic my-4 block -ml-1">That's the utility</span>"
+                    <span class="absolute sam-quote-text-3 text-lg md:text-base font-light block mt-10">Kaka</span>
+                </div>
+                <div class="gentle-image absolute">
+                    <img src="/image/sam-gentleman.png" alt="absolute w-48 h-auto">
+                </div>
+                <div class="alert-image absolute">
+                    <img src="/image/sam-alert.png" alt="absolute w-48 h-auto">
+                </div>
+                <!-- <div class="success-image"></div> -->
+            </div>
+            <div class="building-image absolute">
+                <img src="/image/sam-building.png" alt="absolute w-80 h-auto">
+            </div>
+        </section>
+
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+            </div>
+        </div>
+
+        <section class="countdown-section relative">
+            <div class="background-countdown-pattern"></div>
+            <div class="title-container">
+                <h2 class="countdown-title">COUNTDOWN TO LAUNCH</h2>
+            </div>
+            <div class="timer">
+                <div class="time-unit">
+                    <div class="time-value" id="days">
+                        <span>00</span>
+                    </div>
+                    <div class="time-label">DAYS</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <div class="time-value" id="hours">
+                        <span>00</span>
+                    </div>
+                    <div class="time-label">HRS</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <div class="time-value" id="minutes">
+                        <span>00</span>
+                    </div>
+                    <div class="time-label">MINS</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <div class="time-value" id="seconds">
+                        <span>00</span>
+                    </div>
+                    <div class="time-label">SECS</div>
+                </div>
+            </div>
+            <div class="unispace-image absolute flex justify-center">
+                <img src="/image/sam-unispace.png" alt="" class="absolute w-1/2 h-auto">
+            </div>
+        </section>
+
+
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="banner-item">
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                    <div class="yellow-tag">SAM</div>
+                    <div class="sammy-text">Sammy</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="join-banner">
+                <img src="image/Join-our-community.png" alt="Join our community">
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon twitter">
+                    <img src="image/x.jpg" alt="Twitter/X">
+                </a>
+                <a href="#" class="social-icon telegram">
+                    <img src="image/Tele.jpg" alt="Telegram">
+                </a>
+                <a href="#" class="social-icon discord">
+                    <img src="image/Screener.png" alt="Discord">
+                </a>
+                <a href="#" class="social-icon coingecko">
+                    <img src="image/Coingecko.jpg" alt="CoinGecko">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+</body>
+
+</html>
